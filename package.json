@@ -1,8 +1,8 @@
 {
   "license": "MIT",
   "scripts": {
-    "assets:build": "postcss -o assets/app.css src/css/*.css NODE_ENV=production",
-    "assets:watch": "postcss -o assets/app.css src/css/*.css --watch"
+    "assets:prod": "NODE_ENV=production postcss -o assets/app.css src/css/*.css",
+    "assets:dev": "postcss -o assets/app.css src/css/*.css"
   },
   "dependencies": {
     "autoprefixer": "^9.8.0",
